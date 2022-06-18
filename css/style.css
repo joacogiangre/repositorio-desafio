@@ -21,6 +21,42 @@ h1,h2,h3{
 	font-family: 'Ubuntu Condensed', sans-serif;
 }
 
+.skew:hover{
+	color: black;
+	transform: skew(20deg);
+	transition: 3s;
+	cursor: wait;
+}
+
+.rotate:hover{
+	transform: rotate3d(2, 3, 1, 45deg);
+	cursor: pointer;
+}
+
+@keyframes animate-div{
+	0%{width: 100px; text-align: center}
+	50%{width: 400px; text-align: center}
+	100%{width: 150px}
+
+}
+
+.animate{
+	animation-name: animate-div;
+	animation-iteration-count: 1;
+	animation-timing-function: step-start;
+	animation-duration: 4s;
+	animation-delay: 0;
+}
+
+@keyframes text-alpha{
+	from{opacity: 0;}
+	to{opacity: 2;}
+}
+
+h2, ul li{
+	animation-name: text-alpha;
+	animation-duration: 3s;
+}
 
 .encabezado{
 	text-align: center;
